@@ -1,5 +1,5 @@
 var http = require('http');
-var sys = require('sys');
+// var sys = require('sys');
 var url = require('url');
 
 function start() {
@@ -54,7 +54,7 @@ function start() {
 		// response.end();
 	}
 
-	http.createServer(onRequest).listen(8888, '127.0.0.1');
+	http.createServer(onRequest).listen(8888);
 	console.log('Server has started.');
 }
 
